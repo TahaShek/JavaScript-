@@ -108,15 +108,20 @@ let red=document.querySelector('.red');
 let yellow=document.querySelector('.yellow');
 let green=document.querySelector('.green');
 
-red.onclick= () => console.log('you clicked red ')
-yellow.onclick= () => console.log('you clicked yello ')
-green.onclick= () => console.log('you clicked green ')
+// red.onclick= () => console.log('you clicked red ')
+// yellow.onclick= () => console.log('you clicked yello ')
+// green.onclick= () => console.log('you clicked green ')
 
 
 let square=document.querySelectorAll('.colorSquare')
-// console.log(square)
-// console.log(square[0].value)
-// console.log(square[1].value)
-// console.log(square[2].value)
-// square.forEach(element=> console.log(element))
-square.forEach(square=>console.log(square.value))
+let timeClicked={'red':0,'green':0, 'yellow':0}
+
+square.forEach(square=>{
+  square.onclick= ()=> {
+  timeClicked[square.value]+=1;
+  square.innerText=timeClicked[square.value]
+//   console.log(square.value)
+}  
+})
+
+
