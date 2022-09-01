@@ -119,9 +119,23 @@ let timeClicked={'red':0,'green':0, 'yellow':0}
 square.forEach(square=>{
   square.onclick= ()=> {
   timeClicked[square.value]+=1;
-  square.innerText=timeClicked[square.value]
+  square.innerHTML=timeClicked[square.value]
 //   console.log(square.value)
 }  
 })
+
+let clear=document.querySelector('.clear')
+
+let clearScore=()=>{
+    // timeClicked.red=0
+    // timeClicked.yellow=0
+    // timeClicked.green=0
+    square.forEach(square=>{
+        square.innerHTML=''
+    })
+}
+
+clear.onclick=()=>clearScore()
+
 
 
