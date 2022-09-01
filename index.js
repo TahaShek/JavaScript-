@@ -64,11 +64,7 @@ console.log('hello')
 // console.log(num)
 
 
-// let actors=[
-//     {Name:'jonny',worth:1000},
-//     {Name:'jerry',worth:10},
-//     {Name:'kik',worth:200000},
-// ]
+
 // let result=actors.filter(actor=>actor.worth>50)
 //  let n=result.map(actor=>actor.Name).join(',')
 // console.log(n)
@@ -85,3 +81,42 @@ console.log('hello')
 // }
 
 // console.log(sum([1,2,3,4,]))
+
+// let sumNums=(number)=>{}
+// let nums=[1,2,3,4,5];
+// let result= nums.reduce((add1,add2)=>add1+add2)  
+
+// console.log(result)
+
+// let sum=(a,b)=>{
+//     return a*b
+// }
+// let num=[1,2,3,4]
+// let result=num.reduce(a)=>a
+// console.log(result)
+
+//  let  actors=[
+//           {Name:'jonny',worth:1000},
+//          {Name:'jerry',worth:10},
+//         {Name:'kik',worth:200000},
+//     ]
+//     let worth=actors.reduce((a,b)=>a+b.worth,0)
+//     console.log(worth)
+
+let title =document.querySelector('.title');
+let red=document.querySelector('.red');
+let yellow=document.querySelector('.yellow');
+let green=document.querySelector('.green');
+
+red.onclick= () => console.log('you clicked red ')
+yellow.onclick= () => console.log('you clicked yello ')
+green.onclick= () => console.log('you clicked green ')
+
+
+let square=document.querySelectorAll('.colorSquare')
+// console.log(square)
+// console.log(square[0].value)
+// console.log(square[1].value)
+// console.log(square[2].value)
+// square.forEach(element=> console.log(element))
+square.forEach(square=>console.log(square.value))
